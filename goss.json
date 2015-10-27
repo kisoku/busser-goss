@@ -1,0 +1,11 @@
+{
+    "command": {
+        "echo hello": {
+            "exit-status": "0",
+            "stdout": [
+                "hello"
+            ],
+            "stderr": []
+        }
+    }
+}
