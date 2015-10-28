@@ -21,6 +21,6 @@ module Busser
   module Goss
 
     # Version string for the Goss Busser runner plugin
-    VERSION = '0.1.0'
+    VERSION = '0.1.2'
   end
 end

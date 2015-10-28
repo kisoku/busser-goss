@@ -28,10 +28,10 @@ class Busser::RunnerPlugin::Goss < Busser::RunnerPlugin::Base
     url = "https://github.com/aelsabbahy/goss/releases/download/#{version}/goss-linux-amd64"
     destdir = vendor_path('goss')
 
-    empty_directory(dest_path)
+    empty_directory(destdir)
 
     src = open(url).binmode
-    dst = open(File.join(destdir, 'goss'))
+    dst = File.open(File.join(destdir, 'goss'), 'wb')
     IO.copy_stream(src, dst)
 
     inside(destdir) do
