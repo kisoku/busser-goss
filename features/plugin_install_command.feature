@@ -8,5 +8,4 @@ Feature: Plugin install command
 
   Scenario: Running the postinstall generator
     When I run `busser plugin install busser-goss --force-postinstall`
-    Then pry me
     Then the exit status should be 0
