@@ -24,7 +24,7 @@ require 'busser/runner_plugin'
 #
 class Busser::RunnerPlugin::Goss < Busser::RunnerPlugin::Base
   postinstall do
-    version = 'v0.0.7'
+    version = 'v0.0.11'
     url = "https://github.com/aelsabbahy/goss/releases/download/#{version}/goss-linux-amd64"
     destdir = vendor_path('goss')
 
